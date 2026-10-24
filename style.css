@@ -134,3 +134,69 @@ img:hover {
     transform: translateY(4px);
     box-shadow: 0 1px 0 #413333;
 }
+
+@media (max-width: 600px) {
+    #header {
+        padding: 16px;
+    }
+
+    #header h1 {
+        font-size: clamp(1.35rem, 6vw, 2rem);
+        letter-spacing: 1px;
+    }
+
+    .choices {
+        gap: clamp(0.5rem, 3vw, 1.5rem);
+        margin-top: 2rem;
+        padding: 0 8px;
+    }
+
+    .choice {
+        width: clamp(76px, 25vw, 140px);
+        height: auto;
+        flex: 0 1 auto;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1;
+    }
+
+    .score-board {
+        gap: clamp(1rem, 5vw, 2rem);
+        margin-top: 2rem;
+        padding: 0 16px;
+    }
+
+    .score {
+        flex: 1;
+        min-width: 0;
+        padding: 12px;
+    }
+
+    .score p:first-child {
+        font-size: clamp(2.2rem, 10vw, 2.8rem);
+    }
+
+    .score p:last-child {
+        font-size: clamp(0.9rem, 4vw, 1.1rem);
+    }
+
+    .msg-container {
+        margin-top: 2rem;
+        padding: 0 16px;
+    }
+
+    #msg {
+        max-width: 100%;
+        padding: 12px 20px;
+        font-size: clamp(1.1rem, 5vw, 1.4rem);
+    }
+
+    #reset-btn {
+        padding: 12px 24px;
+        font-size: clamp(1.1rem, 5vw, 1.4rem);
+    }
+}
