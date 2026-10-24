@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F5EBDD;
+    font-family: 'Outfit', 'Poppins', sans-serif;
+    
+}
+
+/* Header Styling */
+#header {
+    background-color: #413333;
+    padding: 20px;
+    text-align: center;
+}
+
+#header h1, .game-title {
+    font-family: 'Lilita One', cursive;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #F5EBDD;
+}
+
+.choice {
+    height: 165px;
+    width: 165px;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+img:hover {
+    transform: none;
+    border: 5px solid #000000;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 50px;
+}
+
+/* Scoreboard Styling */
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    margin-top: 3rem;
+    gap: 4rem;
+    text-align: center;
+}
+
+.score {
+    background: #ffffff;
+    padding: 14px 28px;
+    border-radius: 16px;
+    border: 3px solid #413333;
+    box-shadow: 0 6px 0 #413333;
+    min-width: 120px;
+}
+
+.score p:first-child {
+    font-family: 'Lilita One', cursive;
+    font-size: 2.8rem;
+    color: #315B8C;
+    line-height: 1;
+}
+
+.score p:last-child {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #413333;
+    text-transform: uppercase;
+    margin-top: 6px;
+}
+
+/* Move Message Styling */
+.msg-container {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+#msg {
+    background-color: #F2765E;
+    color: #F5EBDD;
+    font-family: 'Lilita One', cursive;
+    font-size: 1.4rem;
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 50px;
+    border: 3px solid #413333;
+    box-shadow: 0 5px 0 #413333;
+    letter-spacing: 1px;
+}
+
+.reset-container {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+#reset-btn {
+    background-color: #F5EBDD;
+    color: #413333;
+    font-family: 'Lilita One', cursive;
+    font-size: 1.4rem;
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 50px;
+    border: 3px solid #413333;
+    box-shadow: 0 5px 0 #413333;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+#reset-btn:hover {
+    background-color: #DACBB7;
+    color: #413333;
+    cursor: pointer;
+}
+
+#reset-btn:active {
+    transform: translateY(4px);
+    box-shadow: 0 1px 0 #413333;
+}
